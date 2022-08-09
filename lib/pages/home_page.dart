@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/hero_banner.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
 
@@ -10,6 +12,16 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Stack(
+        children: const [
+          CustomScrollView(
+            slivers: [
+              HeroBanner(),
+            ],
+          ),
+        ],
+      ),
+    );
   }
 }
