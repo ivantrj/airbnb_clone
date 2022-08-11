@@ -1,3 +1,5 @@
+import 'package:airbnb_clone/models/city.dart';
+import 'package:airbnb_clone/widgets/city_widgets.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/header.dart';
@@ -20,6 +22,7 @@ class _HomePageState extends State<HomePage> {
             slivers: [
               HeroBanner(),
               Header("Explore Nearby"),
+              CitiesGrid(),
             ],
           ),
         ],
